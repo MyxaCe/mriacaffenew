@@ -1,0 +1,3472 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - Кафе української кухні «Мрія»</title>
+    <link href="https://fonts.googleapis.com/css?family=Philosopher:400,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="menu/templates/css/style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="phone-info">
+                <i class="bi bi-telephone-fill"></i>
+                +380 (99) 735-15-25
+            </div>
+            <div class="work-hours">
+                Замовлення приймаються з 12:00 - 23:00
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/menu">Меню доставки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/banquet">Банкет</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contacts">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="cart-button">
+                <i class="bi bi-cart3"></i>
+                Кошик
+                <span class="cart-count">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="categories">
+        <button class="category-btn">Хіти</button>
+        <button class="category-btn">Набори</button>
+        <button class="category-btn">Закуски</button>
+        <button class="category-btn">Сендвічі/Бутерброди</button>
+        <button class="category-btn">Сало</button>
+        <button class="category-btn">Салати</button>
+        <button class="category-btn">Супи</button>
+        <button class="category-btn">Гарячі страви</button>
+        <button class="category-btn">Гарніри</button>
+        <button class="category-btn">Пельмені та вареники</button>
+        <button class="category-btn">Деруни та не тільки</button>
+        <button class="category-btn">Випічка</button>
+        <button class="category-btn">Десерти</button>
+        <button class="category-btn">Напої</button>
+        <button class="category-btn">Хліб</button>
+        <button class="category-btn">Фірмові заготівлі</button>
+        <button class="category-btn">Торти (по замовленню)</button>
+        <button class="category-btn">Соуси</button>
+    </div>
+
+    <div class="main-content">
+        <div class="products-grid">
+            <!-- Котлета по-київськи (Хіти) -->
+            <div class="product-card category-popular" data-product-id="cutlet-kyiv">
+                <img src="menu/templates/menu/popular/3137.jpg" alt="Котлета по-київськи" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Котлета по-київськи</h3>
+                    <div class="product-details">
+                        <span class="product-weight">300 г</span>
+                        <span class="product-price">330 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Оселедець під шубою (Хіти) -->
+            <div class="product-card category-popular" data-product-id="herring-under-fur">
+                <img src="menu/templates/menu/popular/3138.jpg" alt="Оселедець під шубою" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Оселедець під шубою</h3>
+                    <div class="product-details">
+                        <span class="product-weight">250 г</span>
+                        <span class="product-price">190 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Борщ українець (Хіти и Супи) -->
+            <!-- Салати -->
+            <div class="product-card category-salads" data-product-id="salad-vinegret">
+                <img src="menu/templates/menu/salads/vinegret.jpg" alt="Вінегрет" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Вінегрет</h3>
+                    <div class="product-details text-center">
+                        <select id="vinegret-select" class="form-select text-center">
+                            <option value="180">Вінегрет (330 г)</option>
+                            <option value="210">Вінегрет з кількою (285 г)</option>
+                        </select>
+                        <span id="vinegret-price" class="product-price">180 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-salads" data-product-id="salad-greek">
+                <img src="menu/templates/menu/salads/greek.jpg" alt="Салат а-ля «Грецький»" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Салат а-ля «Грецький»</h3>
+                    <div class="product-details">
+                        <span class="product-weight">280 г</span>
+                        <span class="product-price">240 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-salads" data-product-id="salad-herring">
+                <img src="menu/templates/menu/salads/herring.jpg" alt="Оселедець під шубою" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Оселедець під шубою</h3>
+                    <div class="product-details">
+                        <span class="product-weight">320 г</span>
+                        <span class="product-price">190 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-salads" data-product-id="salad-olivier">
+                <img src="menu/templates/menu/salads/olivier.jpg" alt="Салат від пана Олів'є" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Салат від пана Олів'є</h3>
+                    <div class="product-details">
+                        <span class="product-weight">365 г</span>
+                        <span class="product-price">220 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-salads" data-product-id="salad-tongue">
+                <img src="menu/templates/menu/salads/tongue.jpg" alt="Теплий салат з язиком" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Теплий салат з язиком</h3>
+                    <div class="product-details">
+                        <span class="product-weight">180 г</span>
+                        <span class="product-price">260 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-salads" data-product-id="salad-chicken">
+                <img src="menu/templates/menu/salads/chicken.jpg" alt="Салат з підкопченою куркою і печеними овочами" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Салат з підкопченою куркою і печеними овочами</h3>
+                    <div class="product-details">
+                        <span class="product-weight">225 г</span>
+                        <span class="product-price">240 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-salads" data-product-id="salad-duck">
+                <img src="menu/templates/menu/salads/duck.jpg" alt="Салат з качкою і маринованими груздями" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Салат з качкою і маринованими груздями</h3>
+                    <div class="product-details">
+                        <span class="product-weight">235 г</span>
+                        <span class="product-price">270 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Супи -->
+            <div class="product-card category-popular category-soups" data-product-id="borsch">
+                <img src="menu/templates/menu/popular/3139.jpg" alt="Борщ українець" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Борщ українець з пампушками та сметаною</h3>
+                    <div class="product-details">
+                        <span class="product-weight">400 г</span>
+                        <span class="product-price">220 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-soups" data-product-id="borsch-chef">
+                <img src="menu/templates/menu/hot/borsch-chef.jpg" alt="Борщ український від шефа" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Борщ український від шефа</h3>
+                    <div class="product-details text-center">
+                        <select id="borsch-chef-select" class="form-select text-center">
+                            <option value="280">З копченим салом (300/36/80/30 г)</option>
+                            <option value="270">З підчеревком (300/36/80/30 г)</option>
+                            <option value="260">З солоним салом (300/36/80/30 г)</option>
+                        </select>
+                        <span id="borsch-chef-price" class="product-price">280 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-soups" data-product-id="cold-borsch">
+                <img src="menu/templates/menu/hot/cold-borsch.jpg" alt="Борщ холодний" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Борщ холодний</h3>
+                    <div class="product-details">
+                        <span class="product-weight">300/100 г</span>
+                        <span class="product-price">190 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-soups" data-product-id="okroshka">
+                <img src="menu/templates/menu/hot/okroshka.jpg" alt="Окрошка сільська" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Окрошка сільська</h3>
+                    <div class="product-details">
+                        <span class="product-weight">340 г</span>
+                        <span class="product-price">180 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-soups" data-product-id="chicken-soup">
+                <img src="menu/templates/menu/hot/chicken-soup.jpg" alt="Куряча юшка" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Куряча юшка</h3>
+                    <div class="product-details">
+                        <span class="product-weight">330 г</span>
+                        <span class="product-price">170 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-soups" data-product-id="rassolnik">
+                <img src="menu/templates/menu/hot/rassolnik.jpg" alt="Расольник" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Расольник</h3>
+                    <div class="product-details">
+                        <span class="product-weight">345 г</span>
+                        <span class="product-price">190 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-soups" data-product-id="tsar-soup">
+                <img src="menu/templates/menu/hot/tsar-soup.jpg" alt="Юшка Царська" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Юшка Царська</h3>
+                    <div class="product-details">
+                        <span class="product-weight">335 г</span>
+                        <span class="product-price">290 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-soups" data-product-id="mushroom-borsch">
+                <img src="menu/templates/menu/hot/mushroom-borsch.jpg" alt="Борщ Грибний" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Борщ Грибний</h3>
+                    <div class="product-details">
+                        <span class="product-weight">405 г</span>
+                        <span class="product-price">210 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Гарячі страви -->
+            <div class="product-card category-hot" data-product-id="pork-steak">
+                <img src="menu/templates/menu/hot/pork-steak.jpg" alt="Стейк зі свинини" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Стейк зі свинини</h3>
+                    <div class="product-details">
+                        <span class="product-weight">450 г</span>
+                        <span class="product-price">739 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="ukrainian-sausage">
+                <img src="menu/templates/menu/hot/sausage.jpg" alt="Ковбаса «Українська»" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Ковбаса «Українська»</h3>
+                    <div class="product-details">
+                        <span class="product-weight">385 г</span>
+                        <span class="product-price">755 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="meat-orlovsky">
+                <img src="menu/templates/menu/hot/orlovsky.jpg" alt="М'ясо по-орловськи" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">М'ясо по-орловськи</h3>
+                    <div class="product-details">
+                        <span class="product-weight">540 г</span>
+                        <span class="product-price">675 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="kyiv-cutlet-hot">
+                <img src="menu/templates/menu/hot/kyiv-cutlet.jpg" alt="Котлета по-київськи" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Котлета по-київськи</h3>
+                    <div class="product-details">
+                        <span class="product-weight">200 г</span>
+                        <span class="product-price">595 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="sudak-grill">
+                <img src="menu/templates/menu/hot/sudak-grill.jpg" alt="Чорноморський судак з овочами на грилі" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Чорноморський судак з овочами на грилі</h3>
+                    <div class="product-details">
+                        <span class="product-weight">310 г</span>
+                        <span class="product-price">775 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="sudak-cutlets">
+                <img src="menu/templates/menu/hot/sudak-cutlets.jpg" alt="Котлети з судака" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Котлети з судака</h3>
+                    <div class="product-details">
+                        <span class="product-weight">325 г</span>
+                        <span class="product-price">599 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="pork-ribs">
+                <img src="menu/templates/menu/hot/pork-ribs.jpg" alt="Свинячі ребра з молодою картоплею і соліннями" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Свинячі ребра з молодою картоплею і соліннями</h3>
+                    <div class="product-details">
+                        <span class="product-weight">500 г</span>
+                        <span class="product-price">865 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="salmon-bake">
+                <img src="menu/templates/menu/hot/salmon-bake.jpg" alt="Запіканка з лосося" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Запіканка з лосося</h3>
+                    <div class="product-details">
+                        <span class="product-weight">345 г</span>
+                        <span class="product-price">695 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="fried-smelt">
+                <img src="menu/templates/menu/hot/fried-smelt.jpg" alt="Смажена чорноморська корюшка з соусом тар-тар" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Смажена чорноморська корюшка з соусом тар-тар</h3>
+                    <div class="product-details text-center">
+                        <select id="fried-smelt-select" class="form-select text-center">
+                            <option value="995">Велика порція (310 г)</option>
+                            <option value="565">Стандартна порція (180 г)</option>
+                        </select>
+                        <span id="fried-smelt-price" class="product-price">995 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="chicken-cutlet-mushroom">
+                <img src="menu/templates/menu/hot/chicken-cutlet.jpg" alt="Куряча котлета з грибним соусом" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Куряча котлета з грибним соусом</h3>
+                    <div class="product-details">
+                        <span class="product-weight">400 г</span>
+                        <span class="product-price">525 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="duck-leg">
+                <img src="menu/templates/menu/hot/duck-leg.jpg" alt="Тушкована качина ніжка" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Тушкована качина ніжка</h3>
+                    <div class="product-details">
+                        <span class="product-weight">310 г</span>
+                        <span class="product-price">695 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="beef-cheeks">
+                <img src="menu/templates/menu/hot/beef-cheeks.jpg" alt="Яловичі щоки з м'ясним соусом і шкварками" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Яловичі щоки з м'ясним соусом і шкварками</h3>
+                    <div class="product-details">
+                        <span class="product-weight">300 г</span>
+                        <span class="product-price">695 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="beef-tongue">
+                <img src="menu/templates/menu/hot/beef-tongue.jpg" alt="Язик з печеною картоплею і квасолею в томаті" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Язик з печеною картоплею і квасолею в томаті</h3>
+                    <div class="product-details">
+                        <span class="product-weight">375 г</span>
+                        <span class="product-price">785 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="pork-stroganoff">
+                <img src="menu/templates/menu/hot/pork-stroganoff.jpg" alt="Свинина по-строгановськи з печеною картоплею" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Свинина по-строгановськи з печеною картоплею</h3>
+                    <div class="product-details">
+                        <span class="product-weight">410 г</span>
+                        <span class="product-price">699 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="carp-fillet">
+                <img src="menu/templates/menu/hot/carp-fillet.jpg" alt="Філе коропа з пюре і томатною сальсою" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Філе коропа з пюре і томатною сальсою</h3>
+                    <div class="product-details">
+                        <span class="product-weight">420 г</span>
+                        <span class="product-price">975 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-hot" data-product-id="holubtsi">
+                <img src="menu/templates/menu/hot/holubtsi.jpg" alt="Голубці" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Голубці</h3>
+                    <div class="product-details">
+                        <span class="product-weight">530 г</span>
+                        <span class="product-price">495 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Гарніри -->
+            <div class="product-card category-sides" data-product-id="boiled-potatoes">
+                <img src="menu/templates/menu/sides/boiled-potatoes.jpg" alt="Картопля відварна" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Картопля відварна</h3>
+                    <div class="product-details">
+                        <span class="product-weight">200 г</span>
+                        <span class="product-price">145 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-sides" data-product-id="fried-potatoes-mushrooms">
+                <img src="menu/templates/menu/sides/potatoes-mushrooms.jpg" alt="Картопля, смажена з печерицями" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Картопля, смажена з печерицями</h3>
+                    <div class="product-details">
+                        <span class="product-weight">250 г</span>
+                        <span class="product-price">355 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-sides" data-product-id="buckwheat">
+                <img src="menu/templates/menu/sides/buckwheat.jpg" alt="Гречка зі смаженою цибулею" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Гречка зі смаженою цибулею</h3>
+                    <div class="product-details">
+                        <span class="product-weight">190 г</span>
+                        <span class="product-price">145 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-sides" data-product-id="fresh-vegetables">
+                <img src="menu/templates/menu/sides/fresh-veggies.jpg" alt="Свіжі овочі" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Свіжі овочі</h3>
+                    <div class="product-details">
+                        <span class="product-weight">240 г</span>
+                        <span class="product-price">285 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-sides" data-product-id="mashed-potatoes">
+                <img src="menu/templates/menu/sides/mashed-potatoes.jpg" alt="Картопляне пюре" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Картопляне пюре</h3>
+                    <div class="product-details">
+                        <span class="product-weight">180 г</span>
+                        <span class="product-price">195 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-sides" data-product-id="grilled-vegetables">
+                <img src="menu/templates/menu/sides/grilled-veggies.jpg" alt="Овочі гриль" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Овочі гриль</h3>
+                    <div class="product-details">
+                        <span class="product-weight">200 г</span>
+                        <span class="product-price">319 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-sides" data-product-id="potatoes-with-salo">
+                <img src="menu/templates/menu/sides/potatoes-salo.jpg" alt="Картопля, смажена з салом" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Картопля, смажена з салом</h3>
+                    <div class="product-details">
+                        <span class="product-weight">285 г</span>
+                        <span class="product-price">365 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-sides" data-product-id="potatoes-with-sausage">
+                <img src="menu/templates/menu/sides/potatoes-sausage.jpg" alt="Картопля, смажена з українською ковбасою" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Картопля, смажена з українською ковбасою</h3>
+                    <div class="product-details">
+                        <span class="product-weight">280 г</span>
+                        <span class="product-price">419 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-sides" data-product-id="rice">
+                <img src="menu/templates/menu/sides/rice.jpg" alt="Рис" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Рис</h3>
+                    <div class="product-details">
+                        <span class="product-weight">150 г</span>
+                        <span class="product-price">199 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Пельмені та вареники -->
+            <div class="product-card category-dumplings" data-product-id="cabbage-vareniki">
+                <img src="menu/templates/menu/dumplings/cabbage-vareniki.jpg" alt="Вареники з капустою" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Вареники з капустою</h3>
+                    <div class="product-details">
+                        <span class="product-weight">220 г</span>
+                        <span class="product-price">299 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-dumplings" data-product-id="pelmeni">
+                <img src="menu/templates/menu/dumplings/pelmeni.jpg" alt="Пельмені" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Пельмені</h3>
+                    <div class="product-details text-center">
+                        <select id="pelmeni-select" class="form-select text-center">
+                            <option value="425">Домашні (360 г)</option>
+                            <option value="359">З куркою (350 г)</option>
+                        </select>
+                        <span id="pelmeni-price" class="product-price">425 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-dumplings" data-product-id="cherry-vareniki">
+                <img src="menu/templates/menu/dumplings/cherry-vareniki.jpg" alt="Вареники з вишнею" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Вареники з вишнею</h3>
+                    <div class="product-details">
+                        <span class="product-weight">215 г</span>
+                        <span class="product-price">355 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-dumplings" data-product-id="potato-mushroom-vareniki">
+                <img src="menu/templates/menu/dumplings/potato-mushroom-vareniki.jpg" alt="Вареники з картоплею і грибами" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Вареники з картоплею і грибами</h3>
+                    <div class="product-details">
+                        <span class="product-weight">290 г</span>
+                        <span class="product-price">345 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-dumplings" data-product-id="galushki-bacon">
+                <img src="menu/templates/menu/dumplings/galushki-bacon.jpg" alt="Галушки зі шкварками" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Галушки зі шкварками</h3>
+                    <div class="product-details">
+                        <span class="product-weight">320 г</span>
+                        <span class="product-price">319 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-dumplings" data-product-id="galushki-beef">
+                <img src="menu/templates/menu/dumplings/galushki-beef.jpg" alt="Галушки з тушкованою яловичиною" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Галушки з тушкованою яловичиною</h3>
+                    <div class="product-details">
+                        <span class="product-weight">310 г</span>
+                        <span class="product-price">425 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-dumplings" data-product-id="galushki-sausage">
+                <img src="menu/templates/menu/dumplings/galushki-sausage.jpg" alt="Галушки з українською ковбасою" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Галушки з українською ковбасою</h3>
+                    <div class="product-details">
+                        <span class="product-weight">330 г</span>
+                        <span class="product-price">395 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Деруни -->
+            <div class="product-card category-deruny" data-product-id="deruny">
+                <img src="menu/templates/menu/deruny/deruny.jpg" alt="Діньки картопляні" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Діньки картопляні</h3>
+                    <p class="product-description">Картопля, борошно пшеничне, яйце куряче, подаємо зі сметаною.</p>
+                    <div class="product-details text-center">
+                        <select id="deruny-select" class="form-select text-center">
+                            <option value="325">Діньки класичні (200/40/30 г)</option>
+                            <option value="395">Діньки з кількою (200/40/40 г)</option>
+                            <option value="595">Діньки з лососем (200/40/30 г)</option>
+                            <option value="445">Діньки з протертим салом (200/40/40 г)</option>
+                            <option value="435">Діньки з рубаниною зі скумбрії (200/55/40 г)</option>
+                        </select>
+                        <span id="deruny-price" class="product-price">325 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-deruny" data-product-id="zucchini">
+                <img src="menu/templates/menu/deruny/zucchini.jpg" alt="Оладки з кабачків" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Оладки з кабачків</h3>
+                    <p class="product-description">Кабачки, пшеничне борошно, куряче яйце, подаємо зі сметаною</p>
+                    <div class="product-details text-center">
+                        <select id="zucchini-select" class="form-select text-center">
+                            <option value="355">Оладки з кабачків (130/40 г)</option>
+                            <option value="425">Оладки з цукіні з кількою (140/40/30 г)</option>
+                            <option value="625">Оладки з цукіні з лососем (140/40/30 г)</option>
+                            <option value="475">Оладки з цукіні з протертим салом (150/40/30 г)</option>
+                            <option value="465">Оладки з цукіні з рубаниною зі скумбрії (140/40/30 г)</option>
+                        </select>
+                        <span id="zucchini-price" class="product-price">355 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Випічка -->
+            <div class="product-card category-bakery" data-product-id="pancakes">
+                <img src="menu/templates/menu/bakery/pancakes.jpg" alt="Пшеничні млинці" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Пшеничні млинці</h3>
+                    <div class="product-details">
+                        <span class="product-weight">150/40 г</span>
+                        <span class="product-price">199 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-bakery" data-product-id="pies">
+                <img src="menu/templates/menu/bakery/pies.jpg" alt="Пиріжки" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Пиріжки</h3>
+                    <p class="product-description">В асортименті</p>
+                    <div class="product-details text-center">
+                        <select id="pies-select" class="form-select text-center">
+                            <option value="90">з картоплею і грибами (60 г)</option>
+                            <option value="90">з зеленою цибулею і яйцем (60 г)</option>
+                            <option value="135">з м'ясом (60 г)</option>
+                            <option value="85">з капустою (60 г)</option>
+                            <option value="145">розстібай з рибою (60 г)</option>
+                        </select>
+                        <span id="pies-price" class="product-price">90 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-bakery" data-product-id="strawberry-pancakes">
+                <img src="menu/templates/menu/bakery/strawberry-pancakes.jpg" alt="Млинці з полуничним варенням" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Млинці з полуничним варенням і вершково-кокосовим кремом</h3>
+                    <div class="product-details">
+                        <span class="product-weight">235 г</span>
+                        <span class="product-price">329 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-bakery" data-product-id="salmon-pancakes">
+                <img src="menu/templates/menu/bakery/salmon-pancakes.jpg" alt="Млинці з лососем" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Млинці з лососем, огірочком і вершковим соусом</h3>
+                    <div class="product-details">
+                        <span class="product-weight">250 г</span>
+                        <span class="product-price">455 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-bakery" data-product-id="meat-pancakes">
+                <img src="menu/templates/menu/bakery/meat-pancakes.jpg" alt="Млинцеві мішечки з м'ясом" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Млинцеві мішечки з м'ясом і сметанним соусом</h3>
+                    <div class="product-details">
+                        <span class="product-weight">270 г</span>
+                        <span class="product-price">425 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Десерти -->
+            <div class="product-card category-desserts" data-product-id="apple-strudel">
+                <img src="menu/templates/menu/desserts/apple-strudel.jpg" alt="Яблучний штрудель" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Яблучний штрудель</h3>
+                    <div class="product-details">
+                        <span class="product-weight">120/30 г</span>
+                        <span class="product-price">340 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-desserts" data-product-id="kyiv-cake">
+                <img src="menu/templates/menu/desserts/kyiv-cake.jpg" alt="Київський торт" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Київський торт</h3>
+                    <div class="product-details">
+                        <span class="product-weight">100 г</span>
+                        <span class="product-price">395 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-desserts" data-product-id="chocolate-sausage">
+                <img src="menu/templates/menu/desserts/chocolate-sausage.jpg" alt="Тістечко шоколадна ковбаса" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Тістечко шоколадна ковбаса</h3>
+                    <div class="product-details">
+                        <span class="product-weight">130 г</span>
+                        <span class="product-price">315 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-desserts" data-product-id="napoleon">
+                <img src="menu/templates/menu/desserts/napoleon.jpg" alt="Наполеон" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Наполеон</h3>
+                    <div class="product-details">
+                        <span class="product-weight">110 г</span>
+                        <span class="product-price">330 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-desserts" data-product-id="medovik">
+                <img src="menu/templates/menu/desserts/medovik.jpg" alt="Медовик" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Медовик</h3>
+                    <div class="product-details">
+                        <span class="product-weight">80 г</span>
+                        <span class="product-price">319 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-desserts" data-product-id="chocolate-tomato">
+                <img src="menu/templates/menu/desserts/chocolate-tomato.jpg" alt="Шоколадний помідор" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Шоколадний помідор</h3>
+                    <div class="product-details">
+                        <span class="product-weight">120 г</span>
+                        <span class="product-price">480 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-desserts" data-product-id="bird-cherry-cake">
+                <img src="menu/templates/menu/desserts/bird-cherry-cake.jpg" alt="Черемуховий торт" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Черемуховий торт</h3>
+                    <div class="product-details">
+                        <span class="product-weight">100 г</span>
+                        <span class="product-price">295 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-desserts" data-product-id="hazelnut-caramel-tart">
+                <img src="menu/templates/menu/desserts/hazelnut-caramel-tart.jpg" alt="Тарт фундук-карамель" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Тарт фундук-карамель</h3>
+                    <div class="product-details">
+                        <span class="product-weight">85 г</span>
+                        <span class="product-price">295 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Напої -->
+            <div class="product-card category-drinks" data-product-id="milkshakes">
+                <img src="menu/templates/menu/drinks/milkshakes.jpg" alt="Молочні коктейлі" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Молочний коктейль</h3>
+                    <div class="product-details text-center">
+                        <select id="milkshake-select" class="form-select text-center">
+                            <option value="295">Пломбір без сиропу (220 мл)</option>
+                            <option value="295">Пломбір з банановим сиропом (220 мл)</option>
+                            <option value="295">Пломбір з грушевим сиропом (220 мл)</option>
+                            <option value="295">Пломбір з карамельним сиропом (220 мл)</option>
+                            <option value="295">Пломбір з полуничним сиропом (220 мл)</option>
+                            <option value="295">Пломбір з кокосовим сиропом (220 мл)</option>
+                        </select>
+                        <span class="product-price">295 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-drinks" data-product-id="earl-grey">
+                <img src="menu/templates/menu/drinks/earl-grey.jpg" alt="Чай Ерл Грей" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Чай Ерл Грей</h3>
+                    <div class="product-details">
+                        <span class="product-weight">200 мл</span>
+                        <span class="product-price">55 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-drinks" data-product-id="fresh-juice">
+                <img src="menu/templates/menu/drinks/fresh-juice.jpg" alt="Свіжовичавлені соки" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Свіжовичавлений апельсиновий сік</h3>
+                    <div class="product-details text-center">
+                        <select id="fresh-juice-select" class="form-select text-center">
+                            <option value="660">Апельсиновий (500 мл)</option>
+                            <option value="400">Апельсиновий (300 мл)</option>
+                        </select>
+                        <span class="product-price">660 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-drinks" data-product-id="coffee">
+                <img src="menu/templates/menu/drinks/coffee.jpg" alt="Кава" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Кава</h3>
+                    <div class="product-details text-center">
+                        <select id="coffee-select" class="form-select text-center">
+                            <option value="110">Капучино (170 мл)</option>
+                            <option value="180">Дуже велике капучино (380 мл)</option>
+                            <option value="205">Капучино на соєвому молоці (170 мл)</option>
+                            <option value="325">Дуже великий капучино на соєвому молоці (380 мл)</option>
+                            <option value="125">Лате (200 мл)</option>
+                            <option value="240">Лате на соєвому молоці (200 мл)</option>
+                            <option value="100">Американо (100 мл)</option>
+                            <option value="110">Подвійний американо (200 мл)</option>
+                            <option value="100">Еспресо (25 мл)</option>
+                        </select>
+                        <span class="product-price">110 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-drinks" data-product-id="compote">
+                <img src="menu/templates/menu/drinks/compote.jpg" alt="Компот" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Компот</h3>
+                    <div class="product-details text-center">
+                        <select id="compote-select" class="form-select text-center">
+                            <option value="510">З кураги (1000 мл)</option>
+                            <option value="640">З ягід (1000 мл)</option>
+                            <option value="440">Зі свіжих яблук (1000 мл)</option>
+                            <option value="465">Із сушених яблук (1000 мл)</option>
+                            <option value="595">Із чорносливу (1000 мл)</option>
+                            <option value="255">З кураги (500 мл)</option>
+                            <option value="320">З ягід (500 мл)</option>
+                            <option value="220">Зі свіжих яблук (500 мл)</option>
+                            <option value="235">Із сушених яблук (500 мл)</option>
+                            <option value="300">Із чорносливу (500 мл)</option>
+                        </select>
+                        <span class="product-price">510 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-drinks" data-product-id="juice">
+                <img src="menu/templates/menu/drinks/juice.jpg" alt="Сік" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Сік в асортименті</h3>
+                    <div class="product-details text-center">
+                        <select id="juice-select" class="form-select text-center">
+                            <option value="250">Сік апельсиновий (1000 мл)</option>
+                            <option value="250">Сік вишневий (1000 мл)</option>
+                            <option value="250">Сік томатний (1000 мл)</option>
+                            <option value="250">Сік яблучний (1000 мл)</option>
+                        </select>
+                        <span class="product-price">250 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-drinks" data-product-id="mors">
+                <img src="menu/templates/menu/drinks/mors.jpg" alt="Морс" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Морс</h3>
+                    <div class="product-details text-center">
+                        <select id="mors-select" class="form-select text-center">
+                            <option value="530">Журавлинний (1000 мл)</option>
+                            <option value="440">Чорна смородина (1000 мл)</option>
+                            <option value="485">Вишневий (1000 мл)</option>
+                            <option value="220">Чорна смородина (500 мл)</option>
+                            <option value="265">Журавлинний (500 мл)</option>
+                            <option value="245">Вишневий (500 мл)</option>
+                        </select>
+                        <span class="product-price">530 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-drinks" data-product-id="rich">
+                <img src="menu/templates/menu/drinks/rich.jpg" alt="Rich" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Напої Rich</h3>
+                    <div class="product-details text-center">
+                        <select id="rich-select" class="form-select text-center">
+                            <option value="190">Rich Біттер Лемон (330 мл)</option>
+                            <option value="190">Rich Індіан Тонік (330 мл)</option>
+                            <option value="190">Rich апельсиновий (200 мл)</option>
+                            <option value="190">Rich персиковий нектар (200 мл)</option>
+                            <option value="190">Rich томатний з сіллю (200 мл)</option>
+                            <option value="190">Rich яблучний (200 мл)</option>
+                            <option value="190">Rich вишневий нектар (200 мл)</option>
+                        </select>
+                        <span class="product-price">190 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-drinks" data-product-id="borjomi-lemonade">
+                <img src="menu/templates/menu/drinks/borjomi-lemonade.jpg" alt="Лимонад Божомі" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Лимонад Божомі</h3>
+                    <div class="product-details text-center">
+                        <select id="borjomi-lemonade-select" class="form-select text-center">
+                            <option value="210">Аджаський апельсин (500 мл)</option>
+                            <option value="210">Груша (500 мл)</option>
+                            <option value="210">Лимон (500 мл)</option>
+                            <option value="210">Тархун (500 мл)</option>
+                        </select>
+                        <span class="product-price">210 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-drinks" data-product-id="water">
+                <img src="menu/templates/menu/drinks/water.jpg" alt="Вода" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Вода</h3>
+                    <div class="product-details text-center">
+                        <select id="water-select" class="form-select text-center">
+                            <option value="325">Cristelle газована (750 мл)</option>
+                            <option value="205">Cristelle негазована (330 мл)</option>
+                            <option value="325">Cristelle негазована (750 мл)</option>
+                            <option value="205">Cristelle газована (330 мл)</option>
+                            <option value="290">Моршинська Преміум (500 мл)</option>
+                            <option value="490">Боржомі (500 мл)</option>
+                        </select>
+                        <span class="product-price">325 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-drinks" data-product-id="kombucha">
+                <img src="menu/templates/menu/drinks/kombucha.jpg" alt="Комбуча MOVA" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Комбуча MOVA газована</h3>
+                    <div class="product-details text-center">
+                        <select id="kombucha-select" class="form-select text-center">
+                            <option value="300">Класична (330 мл)</option>
+                            <option value="295">Малина-м'ята (330 мл)</option>
+                            <option value="295">Тархун-кедр (330 мл)</option>
+                            <option value="295">Шипшина-імбир (330 мл)</option>
+                        </select>
+                        <span class="product-price">300 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-drinks" data-product-id="non-alc-beer">
+                <img src="menu/templates/menu/drinks/non-alc-beer.jpg" alt="Корона пиво б/а" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Корона пиво б/а</h3>
+                    <div class="product-details">
+                        <span class="product-weight">330 мл</span>
+                        <span class="product-price">375 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-drinks" data-product-id="home-lemonade">
+                <img src="menu/templates/menu/drinks/home-lemonade.jpg" alt="Домашній лимонад" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Домашній лимонад</h3>
+                    <div class="product-details text-center">
+                        <select id="home-lemonade-select" class="form-select text-center">
+                            <option value="275">Груша (500 мл)</option>
+                            <option value="395">Журавлина-ялівець (500 мл)</option>
+                            <option value="320">Тархун (500 мл)</option>
+                            <option value="385">Чорниця-м'ята (500 мл)</option>
+                        </select>
+                        <span class="product-price">275 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <div class="product-card category-drinks" data-product-id="non-alc-mojito">
+                <img src="menu/templates/menu/drinks/non-alc-mojito.jpg" alt="Безалкогольний Мохіто" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Безалкогольний Мохіто</h3>
+                    <div class="product-details">
+                        <span class="product-weight">290 мл</span>
+                        <span class="product-price">235 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Торти -->
+            <div class="product-card category-cakes" data-product-id="cakes">
+                <img src="menu/templates/menu/cakes/medovik.jpg" alt="Торти" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Торти на замовлення</h3>
+                    <div class="product-details text-center">
+                        <select id="cakes-select" class="form-select text-center">
+                            <option value="2880" data-image="templates/menu/cakes/medovik.jpg">Медовик (1440 г)</option>
+                            <option value="3360" data-image="templates/menu/cakes/napoleon.jpg">Наполеон (1680 г)</option>
+                            <option value="2000" data-image="templates/menu/cakes/kyivskyi.jpg">Київський (1000 г)</option>
+                            <option value="2520" data-image="templates/menu/cakes/cheremuhovyi.jpg">Черемуховий (1260 г)</option>
+                            <option value="2280" data-image="templates/menu/cakes/chocolate.jpg">Шоколадний (1140 г)</option>
+                            <option value="1200" data-image="templates/menu/cakes/cheesecake.jpg">Чизкейк (600 г)</option>
+                        </select>
+                        <span class="product-price">2880 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Фірмові заготівлі -->
+
+            <div class="product-card category-specials" data-product-id="frozen-dumplings">
+                <img src="menu/templates/menu/specials/frozen-dumplings.jpg" alt="Заморожені вареники та пельмені" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Заморожені вареники та пельмені</h3>
+                    <div class="product-details text-center">
+                        <select id="frozen-select" class="form-select text-center">
+                            <option value="650" data-image="templates/menu/specials/frozen-dumplings-cherry.jpg">Вареники з вишнею (500 г)</option>
+                            <option value="550" data-image="templates/menu/specials/frozen-dumplings-potato.jpg">Вареники з картоплею (500 г)</option>
+                            <option value="550" data-image="templates/menu/specials/frozen-dumplings-cabbage.jpg">Вареники з капустою (500 г)</option>
+                            <option value="650" data-image="templates/menu/specials/frozen-pelmeni-chicken.jpg">Пельмені з куркою (500 г)</option>
+                            <option value="750" data-image="templates/menu/specials/frozen-pelmeni-beef.jpg">Пельмені з яловичиною (500 г)</option>
+                        </select>
+                        <span class="product-price">650 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+
+
+            <!-- Соуси -->
+            <div class="product-card category-sauces" data-product-id="sauces">
+                <img src="menu/templates/menu/sauces/sauces.jpg" alt="Соуси" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Соуси</h3>
+                    <div class="product-details text-center">
+                        <select id="sauces-select" class="form-select text-center">
+                            <option value="50">Гірчиця (30 г)</option>
+                            <option value="50">Майонез (30 г)</option>
+                            <option value="50">Джем (30 г)</option>
+                            <option value="50">Згущене молоко (30 г)</option>
+                            <option value="50">Сметана (30 г)</option>
+                            <option value="50">Кетчуп (30 г)</option>
+                            <option value="50">Соус полуничний (30 г)</option>
+                        </select>
+                        <span id="sauces-price" class="product-price">50 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Хліб -->
+            <div class="product-card category-bread" data-product-id="bread-basket">
+                <img src="menu/templates/menu/bread/bread-basket.jpg" alt="Хлібна корзина" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Хлібна корзина</h3>
+                    <div class="product-details">
+                        <span class="product-weight">200 г</span>
+                        <span class="product-price">159 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Набор "Новеньке" (Набори) -->
+            <div class="product-card category-sets" data-product-id="4">
+                <img src="menu/templates/menu/sets/3366.jpg" alt="Набор Новеньке" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Набор "Новеньке"</h3>
+                    <div class="product-description">
+                        <ul class="set-items">
+                            <li>Окрошка сільська</li>
+                            <li>Галушки з українською ковбасою</li>
+                            <li>Салат з качкою та маринованими груздями</li>
+                        </ul>
+                    </div>
+                    <div class="product-details">
+                        <span class="product-weight">905 г</span>
+                        <span class="product-price">550 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Набор "На закуску" (Набори) -->
+            <div class="product-card category-sets" data-product-id="5">
+                <img src="menu/templates/menu/sets/3367.jpg" alt="Набор На закуску" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Набор "На закуску"</h3>
+                    <div class="product-description">
+                        <ul class="set-items">
+                            <li>Картопля смажена із салом</li>
+                            <li>Бутерброди з кількою</li>
+                            <li>Бутерброди зі шпротами</li>
+                            <li>Оселедець балтійський м/с</li>
+                        </ul>
+                    </div>
+                    <div class="product-details">
+                        <span class="product-weight">715 г</span>
+                        <span class="product-price">490 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+            <!-- Набор "Борщ та Сало" (Набори) -->
+            <div class="product-card category-sets" data-product-id="6">
+                <img src="menu/templates/menu/sets/3368.jpg" alt="Набор Борщ та Сало" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Набор "Борщ та Сало"</h3>
+                    <div class="product-description">
+                        <ul class="set-items">
+                            <li>Борщ Украинский</li>
+                            <li>Галушки со шкварками</li>
+                            <li>Сельдь под шубой</li>
+                            <li>Подчеревок</li>
+                        </ul>
+                    </div>
+                    <div class="product-details">
+                        <span class="product-weight">1155 г</span>
+                        <span class="product-price">620 грн</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="order-btn">Замовити</button>
+                </div>
+            </div>
+
+                <!-- Закуски -->
+                <div class="product-card category-snacks" data-product-id="7">
+                    <img src="menu/templates/menu/snacks/3284.jpg" alt="Форшмак" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Форшмак</h3>
+                        <div class="product-details">
+                            <span class="product-weight">150 г</span>
+                            <span class="product-price">120 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+                <div class="product-card category-snacks" data-product-id="8">
+                    <img src="menu/templates/menu/snacks/3285.jpg" alt="Рубанина зі скумбрії" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Рубанина зі скумбрії</h3>
+                        <div class="product-details">
+                            <span class="product-weight">120 г</span>
+                            <span class="product-price">130 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+                <!-- М'ясо та ковбаси (dropdown) -->
+                <div class="product-card category-snacks" data-product-id="myaso-kovbasy">
+                    <img src="menu/templates/menu/snacks/3303.jpg" alt="М'ясо та ковбаси" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">М'ясо та ковбаси</h3>
+                        <div class="product-details text-center">
+                            <span class="product-weight d-block mb-1">Виберіть різновид</span>
+                            <div class="mb-1" style="width:100%; max-width:260px; margin:0 auto; position:relative;">
+
+                                <select id="myaso-kovbasy-select" class="form-select text-center" style="max-width: 260px; min-width: 120px; font-size:0.97em; padding:2px 8px; margin:0 auto; border:none; box-shadow:none; outline:none; border-radius:0; background-color:#fff;">
+                                    <option value="389">Бастурма (85 г) - 389 грн</option>
+                                    <option value="415">Мова яловича (110 г) - 415 грн</option>
+                                    <option value="179">Ковбаса свиняча домашня (40 г) - 179 грн</option>
+                                    <option value="195">Ковбаса українська домашня (60 г) – 195 грн</option>
+                                </select>
+                                    <div style="position:absolute; left:0; right:0; bottom:0; height:3px; background:#992222; border-radius:2px;"></div>
+                            </div>
+                            <span id="myaso-kovbasy-price" class="product-price d-block mt-1" style="font-size:1.1rem;">389 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+                <!-- Мариновані опеньки -->
+                <div class="product-card category-snacks" data-product-id="marinovani-openky">
+                    <img src="menu/templates/menu/snacks/3348.jpg" alt="Мариновані опеньки" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Мариновані опеньки</h3>
+                        <div class="product-details">
+                            <span class="product-weight">100 г</span>
+                            <span class="product-price">150 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+                <div class="product-card category-snacks" data-product-id="9">
+                    <img src="menu/templates/menu/snacks/3286.jpg" alt="Тартар із фермерської яловичини" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Тартар із фермерської яловичини</h3>
+                        <div class="product-details">
+                            <span class="product-weight">100 г</span>
+                            <span class="product-price">180 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+                <div class="product-card category-snacks" data-product-id="10">
+                    <img src="menu/templates/menu/snacks/3287.jpg" alt="Сет намазок" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Сет намазок</h3>
+                        <div class="product-details">
+                            <span class="product-weight">200 г</span>
+                            <span class="product-price">150 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+                <div class="product-card category-snacks" data-product-id="11">
+                    <img src="menu/templates/menu/snacks/3288.jpg" alt="Холодець" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Холодець</h3>
+                        <div class="product-details">
+                            <span class="product-weight">180 г</span>
+                            <span class="product-price">110 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+                <div class="product-card category-snacks" data-product-id="12">
+                    <img src="menu/templates/menu/snacks/3289.jpg" alt="Строганіна" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Строганіна</h3>
+                        <div class="product-details">
+                            <span class="product-weight">100 г</span>
+                            <span class="product-price">140 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+                <div class="product-card category-snacks" data-product-id="13">
+                    <img src="menu/templates/menu/snacks/3290.jpg" alt="Кілька балтійська малосольна" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Кілька балтійська малосольна</h3>
+                        <div class="product-details">
+                            <span class="product-weight">120 г</span>
+                            <span class="product-price">100 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+                <div class="product-card category-snacks" data-product-id="14">
+                    <img src="menu/templates/menu/snacks/3291.jpg" alt="Гриби білі мариновані з цибулею" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Гриби білі мариновані з цибулею</h3>
+                        <div class="product-details">
+                            <span class="product-weight">100 г</span>
+                            <span class="product-price">160 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+                <div class="product-card category-snacks" data-product-id="15">
+                    <img src="menu/templates/menu/snacks/3349.jpg" alt="М'ясне асорті" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">М'ясне асорті</h3>
+                        <div class="product-details">
+                            <span class="product-weight">250 г</span>
+                            <span class="product-price">320 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+                <div class="product-card category-snacks" data-product-id="15">
+                    <img src="menu/templates/menu/snacks/3292.jpg" alt="Грузді білі в сметані з цибулею" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Грузді білі в сметані з цибулею</h3>
+                        <div class="product-details">
+                            <span class="product-weight">100 г</span>
+                            <span class="product-price">170 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+                <div class="product-card category-snacks" data-product-id="16">
+                    <img src="menu/templates/menu/snacks/3295.jpg" alt="Асорті солінь" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Асорті солінь</h3>
+                        <div class="product-details">
+                            <span class="product-weight">250 г</span>
+                            <span class="product-price">150 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+                <div class="product-card category-snacks" data-product-id="17">
+                    <img src="menu/templates/menu/snacks/3298.jpg" alt="Печінковий торт" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Печінковий торт</h3>
+                        <div class="product-details">
+                            <span class="product-weight">130 г</span>
+                            <span class="product-price">120 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+                <div class="product-card category-snacks" data-product-id="18">
+                    <img src="menu/templates/menu/snacks/3299.jpg" alt="Кров'янка" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Кров'янка</h3>
+                        <div class="product-details">
+                            <span class="product-weight">120 г</span>
+                            <span class="product-price">110 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+
+        <!-- Бутерброди/Сендвічі -->
+        <div class="product-card category-sandwiches" data-product-id="sandwich1">
+            <img src="menu/templates/menu/snacks/sandwich1.jpg" alt="Бутерброд з підчеревком" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Бутерброд з підчеревком</h3>
+                <div class="product-details">
+                    <span class="product-weight">120 г</span>
+                    <span class="product-price">120 грн</span>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn minus" aria-label="Зменшити кількість">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn plus" aria-label="Збільшити кількість">+</button>
+                </div>
+                <button class="order-btn">Замовити</button>
+            </div>
+        </div>
+
+        <!-- Сало -->
+        <div class="product-card category-salo" data-product-id="salo-varieties">
+            <img src="menu/templates/menu/snacks/salo.jpg" alt="Сало" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Сало</h3>
+                <div class="product-details text-center">
+                    <span class="product-weight d-block mb-1">Виберіть різновид</span>
+                    <div class="mb-1" style="width:100%; max-width:260px; margin:0 auto; position:relative;">
+                        <select id="salo-select" class="form-select text-center" style="max-width: 260px; min-width: 120px; font-size:0.97em; padding:2px 8px; margin:0 auto; border:none; box-shadow:none; outline:none; border-radius:0; background-color:#fff;">
+                            <option value="120">Солоне (80/11/30 г) - 120 грн</option>
+                            <option value="130">Копчене (80/11/30 г) - 130 грн</option>
+                            <option value="110">Протерте (70/11/60 г) - 110 грн</option>
+                            <option value="140">Підчеревок (80/11/30 г) - 140 грн</option>
+                        </select>
+                        <div style="position:absolute; left:0; right:0; bottom:0; height:3px; background:#992222; border-radius:2px;"></div>
+                    </div>
+                    <span id="salo-price" class="product-price d-block mt-1" style="font-size:1.1rem;">120 грн</span>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="order-btn">Замовити</button>
+            </div>
+        </div>
+
+        <div class="product-card category-salo" data-product-id="salo-assorti">
+            <img src="menu/templates/menu/snacks/salo-assorti.jpg" alt="Асорті сала" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Асорті сала</h3>
+                <div class="product-description">
+                    Все, що потрібно: сало солоне, копчене і підчеревок. Подаємо з цибулею і гострою гірчицею
+                </div>
+                <div class="product-details">
+                    <span class="product-weight">120/40/40 г</span>
+                    <span class="product-price">280 грн</span>
+                </div>
+                <div class="quantity-control">
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" class="quantity-input" value="1" min="1">
+                    <button class="quantity-btn plus">+</button>
+                </div>
+                <button class="order-btn">Замовити</button>
+            </div>
+        </div>                <div class="product-card category-sandwiches" data-product-id="sandwich2">
+                    <img src="menu/templates/menu/snacks/sandwich2.jpg" alt="Бутерброди з ростбіфом" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Бутерброди з ростбіфом</h3>
+                        <div class="product-details">
+                            <span class="product-weight">150 г</span>
+                            <span class="product-price">150 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus" aria-label="Зменшити кількість">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus" aria-label="Збільшити кількість">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+
+                <div class="product-card category-sandwiches" data-product-id="sandwich3">
+                    <img src="menu/templates/menu/snacks/sandwich3.jpg" alt="Бутерброд по-єврейськи" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Бутерброд по-єврейськи</h3>
+                        <div class="product-details">
+                            <span class="product-weight">110 г</span>
+                            <span class="product-price">110 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus" aria-label="Зменшити кількість">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus" aria-label="Збільшити кількість">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+
+                <div class="product-card category-sandwiches" data-product-id="sandwich4">
+                    <img src="menu/templates/menu/snacks/sandwich4.jpg" alt="Бутерброд зі шпротами" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Бутерброд зі шпротами</h3>
+                        <div class="product-details">
+                            <span class="product-weight">70 г</span>
+                            <span class="product-price">70 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus" aria-label="Зменшити кількість">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus" aria-label="Збільшити кількість">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+
+                <div class="product-card category-sandwiches" data-product-id="sandwich5">
+                    <img src="menu/templates/menu/snacks/sandwich5.jpg" alt="Бутерброди з кількою" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Бутерброди з кількою</h3>
+                        <div class="product-details">
+                            <span class="product-weight">150 г</span>
+                            <span class="product-price">150 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus" aria-label="Зменшити кількість">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus" aria-label="Збільшити кількість">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+
+                <div class="product-card category-sandwiches" data-product-id="sandwich6">
+                    <img src="menu/templates/menu/snacks/sandwich6.jpg" alt="Бутерброди з оселедцем" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Бутерброди з оселедцем</h3>
+                        <div class="product-details">
+                            <span class="product-weight">160 г</span>
+                            <span class="product-price">160 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus" aria-label="Зменшити кількість">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus" aria-label="Збільшити кількість">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+
+                <div class="product-card category-sandwiches" data-product-id="sandwich7">
+                    <img src="menu/templates/menu/snacks/sandwich7.jpg" alt="Асорті бутербродів" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Асорті бутербродів</h3>
+                        <div class="product-details">
+                            <span class="product-weight">380 г</span>
+                            <span class="product-price">380 грн</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus" aria-label="Зменшити кількість">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus" aria-label="Збільшити кількість">+</button>
+                        </div>
+                        <button class="order-btn">Замовити</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- Модальные окна для каждого продукта -->
+    <div class="modal-overlay"></div>
+    
+    <!-- Модальные окна для сала -->
+    <div class="product-modal" id="modal-salo-varieties">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/snacks/salo.jpg" alt="Сало" class="product-image">
+        <h2>Сало</h2>
+        <p>Виберіть різновид сала за вашим смаком. Подаємо з хрінком та гірчицею.</p>
+        <div class="product-details text-center">
+            <select id="modal-salo-select" class="form-select text-center mb-2">
+                <option value="120">Солоне (80/11/30 г) - 120 грн</option>
+                <option value="130">Копчене (80/11/30 г) - 130 грн</option>
+                <option value="110">Протерте (70/11/60 г) - 110 грн</option>
+                <option value="140">Підчеревок (80/11/30 г) - 140 грн</option>
+            </select>
+            <span id="modal-salo-price" class="product-price">120 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-salo-assorti">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/snacks/salo-assorti.jpg" alt="Асорті сала" class="product-image">
+        <h2>Асорті сала</h2>
+        <p>Все, що потрібно: сало солоне, копчене і підчеревок. Подаємо з цибулею і гострою гірчицею</p>
+        <div class="product-details">
+            <span class="product-weight">120/40/40 г</span>
+            <span class="product-price">280 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <!-- Модальные окна для бутербродов -->
+    <div class="product-modal" id="modal-sandwich1">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/snacks/sandwich1.jpg" alt="Бутерброд с подчеревком" class="product-image">
+        <h2>Бутерброд з підчеревком</h2>
+        <p>Свинячий підчеревок, діжонська гірчиця, зелена цибуля, часник, бородинський хліб. У порції 2 шт.</p>
+        <div class="product-details">
+            <span class="product-weight">2 шт</span>
+            <span class="product-price">120 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-sandwich2">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/snacks/sandwich2.jpg" alt="Бутерброды с ростбифом" class="product-image">
+        <h2>Бутерброди з ростбіфом</h2>
+        <p>Ростбіф, маринований огірок, соус із печеного часнику та хрону, медово-гірчична заправка, зелена цибуля, бородинський хліб. У порції 2 шт.</p>
+        <div class="product-details">
+            <span class="product-weight">2 шт</span>
+            <span class="product-price">150 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-sandwich3">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/snacks/sandwich3.jpg" alt="Бутерброд по-еврейски" class="product-image">
+        <h2>Бутерброд по-єврейськи</h2>
+        <p>Оселедець, балтійська кілька, вершкове масло, зелена цибуля, бородинський хліб. У порції 2 шт.</p>
+        <div class="product-details">
+            <span class="product-weight">2 шт</span>
+            <span class="product-price">110 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-sandwich4">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/snacks/sandwich4.jpg" alt="Бутерброд со шпротами" class="product-image">
+        <h2>Бутерброд зі шпротами</h2>
+        <p>Шпроти, мариновані корнішони, майонез, паростки сої, хліб. У порції 2 шт.</p>
+        <div class="product-details">
+            <span class="product-weight">2 шт</span>
+            <span class="product-price">70 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-sandwich5">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/snacks/sandwich5.jpg" alt="Бутерброды с килькой" class="product-image">
+        <h2>Бутерброди з кількою</h2>
+        <p>Балтійська кілька, мус із сиру фетакі, огірок, червона ріпчаста цибуля, зелень, бородинський хліб. У порції 2 шт.</p>
+        <div class="product-details">
+            <span class="product-weight">2 шт</span>
+            <span class="product-price">150 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-sandwich6">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/snacks/sandwich6.jpg" alt="Бутерброды с сельдью" class="product-image">
+        <h2>Бутерброди з оселедцем</h2>
+        <p>Оселедець, огірок, соус на основі гірчиці, яйце, червона ріпчаста цибуля, зелень, бородинський хліб. У порції 2 шт.</p>
+        <div class="product-details">
+            <span class="product-weight">2 шт</span>
+            <span class="product-price">160 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-sandwich7">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/snacks/sandwich7.jpg" alt="Ассорти бутербродов" class="product-image">
+        <h2>Асорті бутербродів</h2>
+        <p>Бутерброд зі шпротами, бутерброд по-єврейськи, бутерброд з оселедцем, бутерброд з кількою, бутерброд з ростбіфом, бутерброд з підчеревком. У порції 6 шт.</p>
+        <div class="product-details">
+            <span class="product-weight">6 шт</span>
+            <span class="product-price">380 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+    <div class="product-modal" id="modal-cutlet-kyiv">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/3137.jpg" alt="Котлета по-київськи" class="product-image">
+        <h2>Котлета по-київськи</h2>
+        <p>Соковита куряча котлета, з начинкою з вершкового масла та зелені. Подаємо з картопляним пюре.</p>
+        <div class="product-details">
+            <span class="product-weight">300 г</span>
+            <span class="product-price">330 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-herring-under-fur">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/3138.jpg" alt="Оселедець під шубою" class="product-image">
+        <h2>Оселедець під шубою</h2>
+        <p>Морква, оселедець, буряк, картопля, яйце, заправлене майонезом</p>
+        <div class="product-details">
+            <span class="product-weight">250 г</span>
+            <span class="product-price">190 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-borsch">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/3139.jpg" alt="Борщ український" class="product-image">
+        <h2>Борщ українець з пампушками та сметаною</h2>
+        <p>Яловичий бульйон, яловича грудинка, картопля, морква, буряк, біла квасоля, капуста</p>
+        <div class="product-details">
+            <span class="product-weight">400 г</span>
+            <span class="product-price">220 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-4">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/sets/set1.jpg" alt="Набор Новеньке" class="product-image">
+        <h2>Набор "Новеньке"</h2>
+        <p>Окрошка сільська, Галушки з українською ковбасою, Салат з качкою та маринованими груздями</p>
+        <div class="product-details">
+            <span class="product-weight">905 г</span>
+            <span class="product-price">550 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-5">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/sets/set2.jpg" alt="Набор На закуску" class="product-image">
+        <h2>Набор "На закуску"</h2>
+        <p>Картопля смажена із салом, Бутерброди з кількою, Бутерброди зі шпротами, Оселедець балтійський м/с</p>
+        <div class="product-details">
+            <span class="product-weight">715 г</span>
+            <span class="product-price">490 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-6">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/sets/set3.jpg" alt="Набор Борщ та Сало" class="product-image">
+        <h2>Набор "Борщ та Сало"</h2>
+        <p>Борщ Украинский, Галушки со шкварками, Сельдь под шубой, Подчеревок</p>
+        <div class="product-details">
+            <span class="product-weight">1155 г</span>
+            <span class="product-price">620 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <!-- Модальные окна для нових закусок -->
+    <div class="product-modal" id="modal-7">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/snacks/3284.jpg" alt="Форшмак" class="product-image">
+        <h2>Форшмак</h2>
+        <p>Класична єврейська закуска з оселедця, яблука, цибулі та яйця.</p>
+        <div class="product-details"><span class="product-weight">150 г</span><span class="product-price">120 грн</span></div>
+        <button class="order-btn">Замовити</button>
+    </div>
+    <div class="product-modal" id="modal-8">
+    <span class="modal-close">&times;</span>
+    <img src="menu/templates/menu/snacks/3285.jpg" alt="Рубанина зі скумбрії" class="product-image">
+        <h2>Рубанина зі скумбрії</h2>
+        <p>Делікатесна закуска з рубаної малосольної скумбрії з зеленню.</p>
+        <div class="product-details"><span class="product-weight">120 г</span><span class="product-price">130 грн</span></div>
+        <button class="order-btn">Замовити</button>
+    </div>
+    <!-- Модальное окно: М'ясо та ковбаси -->
+    <div class="product-modal" id="modal-myaso-kovbasy">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/snacks/3303.jpg" alt="М'ясо та ковбаси" class="product-image">
+        <h2>М'ясо та ковбаси</h2>
+        <p>Виберіть різновид м'ясної закуски:</p>
+        <div class="product-details text-center">
+            <span class="product-weight d-block mb-1">Виберіть різновид</span>
+            <div class="mb-1" style="width:100%; max-width:260px; margin:0 auto; position:relative;">
+                <label for="modal-myaso-kovbasy-select" class="form-label" style="font-size:0.95em;">Оберіть різновид:</label>
+                <select id="modal-myaso-kovbasy-select" class="form-select text-center" style="max-width: 260px; min-width: 120px; font-size:0.97em; padding:2px 8px; margin:0 auto; border:none; box-shadow:none; outline:none; border-radius:0; background-color:#fff;">
+                    <option value="389">Бастурма (85 г) - 389 грн</option>
+                    <option value="415">Мова яловича (110 г) - 415 грн</option>
+                    <option value="179">Ковбаса свиняча домашня (40 г) - 179 грн</option>
+                    <option value="195">Ковбаса українська домашня (60 г) – 195 грн</option>
+                </select>
+                                <div style="position:absolute; left:0; right:0; bottom:0; height:3px; background:#992222; border-radius:2px;"></div>
+            </div>
+            <span id="modal-myaso-kovbasy-price" class="product-price d-block mt-1" style="font-size:1.1rem;">389 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+    <!-- Модальное окно: Мариновані опеньки -->
+    <div class="product-modal" id="modal-marinovani-openky">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/snacks/3348.jpg" alt="Мариновані опеньки" class="product-image">
+        <h2>Мариновані опеньки</h2>
+        <p>Мариновані опеньки з цибулею та спеціями.</p>
+        <div class="product-details"><span class="product-weight">100 г</span><span class="product-price">150 грн</span></div>
+        <button class="order-btn">Замовити</button>
+    </div>
+    <div class="product-modal" id="modal-9">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/snacks/3286.jpg" alt="Тартар із фермерської яловичини" class="product-image">
+        <h2>Тартар із фермерської яловичини</h2>
+        <p>Яловичий тартар з маринованими огірками, цибулею та жовтком.</p>
+        <div class="product-details"><span class="product-weight">100 г</span><span class="product-price">180 грн</span></div>
+        <button class="order-btn">Замовити</button>
+    </div>
+    <div class="product-modal" id="modal-10">
+    <span class="modal-close">&times;</span>
+    <img src="menu/templates/menu/snacks/3287.jpg" alt="Сет намазок" class="product-image">
+        <h2>Сет намазок</h2>
+        <p>Асорті з трьох намазок: паштет, форшмак, ікра з баклажанів.</p>
+        <div class="product-details"><span class="product-weight">200 г</span><span class="product-price">150 грн</span></div>
+        <button class="order-btn">Замовити</button>
+    </div>
+    <div class="product-modal" id="modal-11">
+    <span class="modal-close">&times;</span>
+    <img src="menu/templates/menu/snacks/3288.jpg" alt="Холодець" class="product-image">
+        <h2>Холодець</h2>
+        <p>Традиційний холодець з яловичини та свинини з хріном.</p>
+        <div class="product-details"><span class="product-weight">180 г</span><span class="product-price">110 грн</span></div>
+        <button class="order-btn">Замовити</button>
+    </div>
+    <div class="product-modal" id="modal-12">
+    <span class="modal-close">&times;</span>
+    <img src="menu/templates/menu/snacks/3289.jpg" alt="Строганіна" class="product-image">
+        <h2>Строганіна</h2>
+        <p>Тонко нарізане морожене м'ясо або риба з прянощами.</p>
+        <div class="product-details"><span class="product-weight">100 г</span><span class="product-price">140 грн</span></div>
+        <button class="order-btn">Замовити</button>
+    </div>
+    <div class="product-modal" id="modal-13">
+    <span class="modal-close">&times;</span>
+    <img src="menu/templates/menu/snacks/3290.jpg" alt="Кілька балтійська малосольна" class="product-image">
+        <h2>Кілька балтійська малосольна</h2>
+        <p>Малосольна кілька з цибулею та зеленню.</p>
+        <div class="product-details"><span class="product-weight">120 г</span><span class="product-price">100 грн</span></div>
+        <button class="order-btn">Замовити</button>
+    </div>
+    <div class="product-modal" id="modal-14">
+    <span class="modal-close">&times;</span>
+    <img src="menu/templates/menu/snacks/3291.jpg" alt="Гриби білі мариновані з цибулею" class="product-image">
+        <h2>Гриби білі мариновані з цибулею</h2>
+        <p>Білі мариновані гриби з цибулею та спеціями.</p>
+        <div class="product-details"><span class="product-weight">100 г</span><span class="product-price">160 грн</span></div>
+        <button class="order-btn">Замовити</button>
+    </div>
+    <div class="product-modal" id="modal-15">
+    <span class="modal-close">&times;</span>
+    <img src="menu/templates/menu/snacks/3294.jpg" alt="Грузді білі в сметані з цибулею" class="product-image">
+        <h2>Грузді білі в сметані з цибулею</h2>
+        <p>Грузді білі в сметані з цибулею та зеленню.</p>
+        <div class="product-details"><span class="product-weight">100 г</span><span class="product-price">170 грн</span></div>
+        <button class="order-btn">Замовити</button>
+    </div>
+    <div class="product-modal" id="modal-16">
+    <span class="modal-close">&times;</span>
+    <img src="menu/templates/menu/snacks/3295.jpg" alt="Асорті солінь" class="product-image">
+        <h2>Асорті солінь</h2>
+        <p>Огірки, помідори, капуста, часник, перець, мариновані овочі.</p>
+        <div class="product-details"><span class="product-weight">250 г</span><span class="product-price">150 грн</span></div>
+        <button class="order-btn">Замовити</button>
+    </div>
+    <div class="product-modal" id="modal-17">
+    <span class="modal-close">&times;</span>
+    <img src="menu/templates/menu/snacks/3298.jpg" alt="Печінковий торт" class="product-image">
+        <h2>Печінковий торт</h2>
+        <p>Торт з печінкових млинців з морквою, цибулею та майонезом.</p>
+        <div class="product-details"><span class="product-weight">130 г</span><span class="product-price">120 грн</span></div>
+        <button class="order-btn">Замовити</button>
+    </div>
+    <div class="product-modal" id="modal-18">
+    <span class="modal-close">&times;</span>
+    <img src="menu/templates/menu/snacks/3299.jpg" alt="Кров'янка" class="product-image">
+        <h2>Кров'янка</h2>
+        <p>Традиційна українська кров'янка з гречкою та спеціями.</p>
+        <div class="product-details"><span class="product-weight">120 г</span><span class="product-price">110 грн</span></div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <!-- Модальне вікно -->
+    <div id="product-modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h5 id="modal-title" class="modal-title">Назва товару</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Закрити">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </header>
+                <main class="modal-body">
+                    <img id="modal-image" src="" alt="" class="img-fluid">
+                    <p id="modal-price" class="modal-price">Ціна: 0 грн</p>
+                </main>
+                <footer class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+                    <button type="button" class="btn btn-primary">Додати до кошика</button>
+                </footer>
+            </div>
+        </div>
+
+        <!-- Модальные окна для салатов -->
+        <div class="product-modal" id="modal-vinegret">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/salads/vinegret.jpg" alt="Вінегрет" class="product-image">
+            <h2>Вінегрет</h2>
+            <p>Буряк, картопля, морква, свіжий зелений горошок, солоний огірок, ріпчаста цибуля. Заправляємо ароматним соняшниковою олією і свіжомеленим перцем</p>
+            <div class="product-details text-center">
+                <select id="modal-vinegret-select" class="form-select text-center mb-2">
+                    <option value="180">Вінегрет (330 г) - 180 грн</option>
+                    <option value="210">Вінегрет з кількою (285 г) - 210 грн</option>
+                </select>
+                <span id="modal-vinegret-price" class="product-price">180 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-greek">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/salads/greek.jpg" alt="Салат а-ля «Грецький»" class="product-image">
+            <h2>Салат а-ля «Грецький»</h2>
+            <p>Огірок, лист зеленого салату, болгарський перець, вершковий сир, цибуля червона, чорні оливки, листя руколи, заправляємо оливковою олією і свіжомеленим чорним перцем</p>
+            <div class="product-details">
+                <span class="product-weight">280 г</span>
+                <span class="product-price">240 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-herring">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/salads/herring.jpg" alt="Оселедець під шубою" class="product-image">
+            <h2>Оселедець під шубою</h2>
+            <p>Морква, оселедець, буряк, картопля, яйце, заправляємо майонезом</p>
+            <div class="product-details">
+                <span class="product-weight">320 г</span>
+                <span class="product-price">190 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-olivier">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/salads/olivier.jpg" alt="Салат від пана Олів'є" class="product-image">
+            <h2>Салат від пана Олів'є</h2>
+            <p>Картопля, куряче філе, морква, свіжий і солоний огірок, зелений горошок, заправляємо майонезом і свіжомеленим чорним перцем</p>
+            <div class="product-details">
+                <span class="product-weight">365 г</span>
+                <span class="product-price">220 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-tongue">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/salads/tongue.jpg" alt="Теплий салат з язиком" class="product-image">
+            <h2>Теплий салат з язиком</h2>
+            <p>Соломка з відвареного яловичого язика і смажених грибів, цибулі ріпчастої, заправлена соусом, приготованим на основі майонезу. Подаємо з сирними чіпсами.</p>
+            <div class="product-details">
+                <span class="product-weight">180 г</span>
+                <span class="product-price">260 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-chicken">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/salads/chicken.jpg" alt="Салат з підкопченою куркою і печеними овочами" class="product-image">
+            <h2>Салат з підкопченою куркою і печеними овочами</h2>
+            <p>Подаємо з «російською заправкою» з діжонською гірчицею і паприкою</p>
+            <div class="product-details">
+                <span class="product-weight">225 г</span>
+                <span class="product-price">240 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-duck">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/salads/duck.jpg" alt="Салат з качкою і маринованими груздями" class="product-image">
+            <h2>Салат з качкою і маринованими груздями</h2>
+            <p>Філе качки, грузді, обсмажена картопля, свіжі овочі, листя салату, медово-гірчична заправка.</p>
+            <div class="product-details">
+                <span class="product-weight">235 г</span>
+                <span class="product-price">270 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <!-- Здесь был дубликат модальных окон для супов, который мы удалили -->
+            <div class="product-details">
+                <span class="product-weight">415 г</span>
+                <span class="product-price">220 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-cold-borsch">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/cold-borsch.jpg" alt="Борщ холодний" class="product-image">
+            <h2>Борщ холодний</h2>
+            <p>Подаємо з обсмаженою картоплею, свіжим огірком, редискою, буряком, кефіром, курячим яйцем, сметаною, зеленою цибулею та кропом.</p>
+            <div class="product-details">
+                <span class="product-weight">300/100 г</span>
+                <span class="product-price">190 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-okroshka">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/okroshka.jpg" alt="Окрошка сільська" class="product-image">
+            <h2>Окрошка сільська</h2>
+            <p>Шинка, огірок, картопля, яйце, зелена цибуля, петрушка, кріп, хрін, квас, кефір.</p>
+            <div class="product-details">
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+        <!-- Модальные окна для горячих блюд -->
+        <div class="product-modal" id="modal-pork-steak">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/pork-steak.jpg" alt="Стейк зі свинини" class="product-image">
+            <h2>Стейк зі свинини</h2>
+            <p>Свинячий стейк, подаємо з обсмаженою картоплею, помідорами черрі, квашеною капустою, маринованими огірочками, зеленню і соусом барбекю</p>
+            <div class="product-details">
+                <span class="product-weight">450 г</span>
+                <span class="product-price">739 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-ukrainian-sausage">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/sausage.jpg" alt="Ковбаса «Українська»" class="product-image">
+            <h2>Ковбаса «Українська»</h2>
+            <p>Смажена на сковороді, подаємо з квашеною капустою і смаженою картоплею</p>
+            <div class="product-details">
+                <span class="product-weight">385 г</span>
+                <span class="product-price">755 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-meat-orlovsky">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/orlovsky.jpg" alt="М'ясо по-орловськи" class="product-image">
+            <h2>М'ясо по-орловськи</h2>
+            <p>Свиняча шия, картопля, гриби, цибуля, сир, подрібнені томати, устричний соус, соус чилі.</p>
+            <div class="product-details">
+                <span class="product-weight">540 г</span>
+                <span class="product-price">675 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-kyiv-cutlet-hot">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/kyiv-cutlet.jpg" alt="Котлета по-київськи" class="product-image">
+            <h2>Котлета по-київськи</h2>
+            <p>Соковита куряча котлета з начинкою з вершкового масла і зелені. Подаємо з картопляним пюре.</p>
+            <div class="product-details">
+                <span class="product-weight">200 г</span>
+                <span class="product-price">595 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-sudak-grill">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/sudak-grill.jpg" alt="Чорноморський судак з овочами на грилі" class="product-image">
+            <h2>Чорноморський судак з овочами на грилі</h2>
+            <p>Готуємо на грилі, подаємо з пікантним соусом</p>
+            <div class="product-details">
+                <span class="product-weight">310 г</span>
+                <span class="product-price">775 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-sudak-cutlets">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/sudak-cutlets.jpg" alt="Котлети з судака" class="product-image">
+            <h2>Котлети з судака</h2>
+            <p>Котлетки з чорноморського судака, подаємо з картопляним пюре з нотками малосольного огірка, вершковим соусом з додаванням кінзи і м'яти, прикрашаємо помідорами черрі</p>
+            <div class="product-details">
+                <span class="product-weight">325 г</span>
+                <span class="product-price">599 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-pork-ribs">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/pork-ribs.jpg" alt="Свинячі ребра з молодою картоплею і соліннями" class="product-image">
+            <h2>Свинячі ребра з молодою картоплею і соліннями</h2>
+            <p>Мариновані свинячі ребра запікаємо в печі. Подаємо з картоплею і соліннями</p>
+            <div class="product-details">
+                <span class="product-weight">500 г</span>
+                <span class="product-price">865 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-salmon-bake">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/salmon-bake.jpg" alt="Запіканка з лосося" class="product-image">
+            <h2>Запіканка з лосося</h2>
+            <p>Запікаємо з овочами у вершковому соусі.</p>
+            <div class="product-details">
+                <span class="product-weight">345 г</span>
+                <span class="product-price">695 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-fried-smelt">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/fried-smelt.jpg" alt="Смажена чорноморська корюшка з соусом тар-тар" class="product-image">
+            <h2>Смажена чорноморська корюшка з соусом тар-тар</h2>
+            <p>Подаємо з соусом тартар.</p>
+            <div class="product-details text-center">
+                <select id="modal-fried-smelt-select" class="form-select text-center mb-2">
+                    <option value="995">Велика порція (310 г)</option>
+                    <option value="565">Стандартна порція (180 г)</option>
+                </select>
+                <span id="modal-fried-smelt-price" class="product-price">995 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-chicken-cutlet-mushroom">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/chicken-cutlet.jpg" alt="Куряча котлета з грибним соусом" class="product-image">
+            <h2>Куряча котлета з грибним соусом</h2>
+            <p>Котлета з курячого філе, картопляне пюре, грибний соус.</p>
+            <div class="product-details">
+                <span class="product-weight">400 г</span>
+                <span class="product-price">525 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-duck-leg">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/duck-leg.jpg" alt="Тушкована качина ніжка" class="product-image">
+            <h2>Тушкована качина ніжка</h2>
+            <p>Качина ніжка, відварна перловка, печений гарбуз, сир, мікрозелень.</p>
+            <div class="product-details">
+                <span class="product-weight">310 г</span>
+                <span class="product-price">695 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-beef-cheeks">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/beef-cheeks.jpg" alt="Яловичі щоки з м'ясним соусом і шкварками" class="product-image">
+            <h2>Яловичі щоки з м'ясним соусом і шкварками</h2>
+            <p>Яловичі щоки, картопляне пюре, шкварки з бекону.</p>
+            <div class="product-details">
+                <span class="product-weight">300 г</span>
+                <span class="product-price">695 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-beef-tongue">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/beef-tongue.jpg" alt="Язик з печеною картоплею і квасолею в томаті" class="product-image">
+            <h2>Язик з печеною картоплею і квасолею в томаті</h2>
+            <p>Язик яловичий, печена картопля, квасоля в томатному соусі, сир, мікрозелень.</p>
+            <div class="product-details">
+                <span class="product-weight">375 г</span>
+                <span class="product-price">785 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-pork-stroganoff">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/pork-stroganoff.jpg" alt="Свинина по-строгановськи з печеною картоплею" class="product-image">
+            <h2>Свинина по-строгановськи з печеною картоплею</h2>
+            <p>Томлена свиняча шия у вершково-грибному соусі, печена картопля, смажена цибуля, зелень.</p>
+            <div class="product-details">
+                <span class="product-weight">410 г</span>
+                <span class="product-price">699 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-carp-fillet">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/carp-fillet.jpg" alt="Філе коропа з пюре і томатною сальсою" class="product-image">
+            <h2>Філе коропа з пюре і томатною сальсою</h2>
+            <p>Філе коропа, картопляне пюре, подрібнені томати з устричним соусом.</p>
+            <div class="product-details">
+                <span class="product-weight">420 г</span>
+                <span class="product-price">975 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-holubtsi">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/holubtsi.jpg" alt="Голубці" class="product-image">
+            <h2>Голубці</h2>
+            <p>Капуста, м'ясний фарш, ріпчаста цибуля, морква, подаємо в соусі з овочів зі сметаною</p>
+            <div class="product-details">
+                <span class="product-weight">530 г</span>
+                <span class="product-price">495 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <!-- Модальные окна для гарниров -->
+        <div class="product-modal" id="modal-boiled-potatoes">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/sides/boiled-potatoes.jpg" alt="Картопля відварна" class="product-image">
+            <h2>Картопля відварна</h2>
+            <div class="product-details">
+                <span class="product-weight">200 г</span>
+                <span class="product-price">145 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-fried-potatoes-mushrooms">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/sides/potatoes-mushrooms.jpg" alt="Картопля, смажена з печерицями" class="product-image">
+            <h2>Картопля, смажена з печерицями</h2>
+            <div class="product-details">
+                <span class="product-weight">250 г</span>
+                <span class="product-price">355 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-buckwheat">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/sides/buckwheat.jpg" alt="Гречка зі смаженою цибулею" class="product-image">
+            <h2>Гречка зі смаженою цибулею</h2>
+            <div class="product-details">
+                <span class="product-weight">190 г</span>
+                <span class="product-price">145 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-fresh-vegetables">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/sides/fresh-veggies.jpg" alt="Свіжі овочі" class="product-image">
+            <h2>Свіжі овочі</h2>
+            <p>Огірок, помідор, редиска, масло</p>
+            <div class="product-details">
+                <span class="product-weight">240 г</span>
+                <span class="product-price">285 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-mashed-potatoes">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/sides/mashed-potatoes.jpg" alt="Картопляне пюре" class="product-image">
+            <h2>Картопляне пюре</h2>
+            <div class="product-details">
+                <span class="product-weight">180 г</span>
+                <span class="product-price">195 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-grilled-vegetables">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/sides/grilled-veggies.jpg" alt="Овочі гриль" class="product-image">
+            <h2>Овочі гриль</h2>
+            <div class="product-details">
+                <span class="product-weight">200 г</span>
+                <span class="product-price">319 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-potatoes-with-salo">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/sides/potatoes-salo.jpg" alt="Картопля, смажена з салом" class="product-image">
+            <h2>Картопля, смажена з салом</h2>
+            <div class="product-details">
+                <span class="product-weight">285 г</span>
+                <span class="product-price">365 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-potatoes-with-sausage">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/sides/potatoes-sausage.jpg" alt="Картопля, смажена з українською ковбасою" class="product-image">
+            <h2>Картопля, смажена з українською ковбасою</h2>
+            <div class="product-details">
+                <span class="product-weight">280 г</span>
+                <span class="product-price">419 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-rice">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/sides/rice.jpg" alt="Рис" class="product-image">
+            <h2>Рис</h2>
+            <div class="product-details">
+                <span class="product-weight">150 г</span>
+                <span class="product-price">199 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <!-- Модальные окна для пельменей и вареников -->
+        <div class="product-modal" id="modal-cabbage-vareniki">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/dumplings/cabbage-vareniki.jpg" alt="Вареники з капустою" class="product-image">
+            <h2>Вареники з капустою</h2>
+            <div class="product-details">
+                <span class="product-weight">220 г</span>
+                <span class="product-price">299 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-pelmeni">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/dumplings/pelmeni.jpg" alt="Пельмені" class="product-image">
+            <h2>Пельмені</h2>
+            <div class="product-details text-center">
+                <select id="modal-pelmeni-select" class="form-select text-center mb-2">
+                    <option value="425">Домашні (360 г)</option>
+                    <option value="359">З куркою (350 г)</option>
+                </select>
+                <span id="modal-pelmeni-price" class="product-price">425 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-cherry-vareniki">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/dumplings/cherry-vareniki.jpg" alt="Вареники з вишнею" class="product-image">
+            <h2>Вареники з вишнею</h2>
+            <div class="product-details">
+                <span class="product-weight">215 г</span>
+                <span class="product-price">355 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-potato-mushroom-vareniki">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/dumplings/potato-mushroom-vareniki.jpg" alt="Вареники з картоплею і грибами" class="product-image">
+            <h2>Вареники з картоплею і грибами</h2>
+            <p>Вареники з картоплею і грибами, смажена цибуля, шкварки, сметана, зелень.</p>
+            <div class="product-details">
+                <span class="product-weight">290 г</span>
+                <span class="product-price">345 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-galushki-bacon">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/dumplings/galushki-bacon.jpg" alt="Галушки зі шкварками" class="product-image">
+            <h2>Галушки зі шкварками</h2>
+            <p>Подаємо зі сметаною.</p>
+            <div class="product-details">
+                <span class="product-weight">320 г</span>
+                <span class="product-price">319 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-galushki-beef">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/dumplings/galushki-beef.jpg" alt="Галушки з тушкованою яловичиною" class="product-image">
+            <h2>Галушки з тушкованою яловичиною</h2>
+            <p>Подаємо зі сметаною.</p>
+            <div class="product-details">
+                <span class="product-weight">310 г</span>
+                <span class="product-price">425 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-galushki-sausage">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/dumplings/galushki-sausage.jpg" alt="Галушки з українською ковбасою" class="product-image">
+            <h2>Галушки з українською ковбасою</h2>
+            <p>Подаємо зі сметаною.</p>
+            <div class="product-details">
+                <span class="product-weight">330 г</span>
+                <span class="product-price">395 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+ 
+
+        <div class="product-modal" id="modal-chicken-soup">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/chicken-soup.jpg" alt="Куряча юшка" class="product-image">
+            <h2>Куряча юшка</h2>
+            <p>Курячий бульйон, куряче філе, галушки, морква, ріпчаста цибуля, мікрозелень.</p>
+            <div class="product-details">
+                <span class="product-weight">330 г</span>
+                <span class="product-price">170 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-rassolnik">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/rassolnik.jpg" alt="Расольник" class="product-image">
+            <h2>Расольник</h2>
+            <p>Справжній російський расольник готуємо на ароматному яловичому бульйоні з перловкою, картоплею, цибулею, морквою, яловичою грудинкою і маринованими огірочками. Подаємо з домашньою сметаною</p>
+            <div class="product-details">
+                <span class="product-weight">345 г</span>
+                <span class="product-price">190 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-tsar-soup">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/tsar-soup.jpg" alt="Юшка Царська" class="product-image">
+            <h2>Юшка Царська</h2>
+            <p>Готуємо на рибному бульйоні з трьох видів риб: балтійський судак, сом, лосось. Подаємо з рибним розстібачем</p>
+            <div class="product-details">
+                <span class="product-weight">335 г</span>
+                <span class="product-price">290 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+
+        <div class="product-modal" id="modal-mushroom-borsch">
+            <span class="modal-close">&times;</span>
+            <img src="menu/templates/menu/hot/mushroom-borsch.jpg" alt="Борщ Грибний" class="product-image">
+            <h2>Борщ Грибний</h2>
+            <p>Грибний бульйон, білі гриби, картопля, морква, буряк, капуста. Подаємо з пампушками і сметаною.</p>
+            <div class="product-details">
+                <span class="product-weight">405 г</span>
+                <span class="product-price">210 грн</span>
+            </div>
+            <button class="order-btn">Замовити</button>
+        </div>
+    </div>
+
+    <!-- Модальные окна для салатов -->
+    <div class="product-modal" id="modal-salad-vinegret">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/salads/vinegret.jpg" alt="Вінегрет" class="product-image">
+        <h2>Вінегрет</h2>
+        <p>Буряк, картопля, морква, свіжий зелений горошок, солоний огірок, ріпчаста цибуля. Заправляємо ароматним соняшниковою олією і свіжомеленим перцем</p>
+        <div class="product-details text-center">
+            <select id="modal-vinegret-select" class="form-select text-center mb-2">
+                <option value="180">Вінегрет (330 г) - 180 грн</option>
+                <option value="210">Вінегрет з кількою (285 г) - 210 грн</option>
+            </select>
+            <span id="modal-vinegret-price" class="product-price">180 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-salad-greek">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/salads/greek.jpg" alt="Салат а-ля «Грецький»" class="product-image">
+        <h2>Салат а-ля «Грецький»</h2>
+        <p>Огірок, лист зеленого салату, болгарський перець, вершковий сир, цибуля червона, чорні оливки, листя руколи, заправляємо оливковою олією і свіжомеленим чорним перцем</p>
+        <div class="product-details">
+            <span class="product-weight">280 г</span>
+            <span class="product-price">240 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-salad-herring">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/salads/herring.jpg" alt="Оселедець під шубою" class="product-image">
+        <h2>Оселедець під шубою</h2>
+        <p>Морква, оселедець, буряк, картопля, яйце, заправляємо майонезом</p>
+        <div class="product-details">
+            <span class="product-weight">320 г</span>
+            <span class="product-price">190 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-salad-olivier">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/salads/olivier.jpg" alt="Салат від пана Олів'є" class="product-image">
+        <h2>Салат від пана Олів'є</h2>
+        <p>Картопля, куряче філе, морква, свіжий і солоний огірок, зелений горошок, заправляємо майонезом і свіжомеленим чорним перцем</p>
+        <div class="product-details">
+            <span class="product-weight">365 г</span>
+            <span class="product-price">220 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-salad-tongue">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/salads/tongue.jpg" alt="Теплий салат з язиком" class="product-image">
+        <h2>Теплий салат з язиком</h2>
+        <p>Соломка з відвареного яловичого язика і смажених грибів, цибулі ріпчастої, заправлена соусом, приготованим на основі майонезу. Подаємо з сирними чіпсами.</p>
+        <div class="product-details">
+            <span class="product-weight">180 г</span>
+            <span class="product-price">260 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-salad-chicken">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/salads/chicken.jpg" alt="Салат з підкопченою куркою і печеними овочами" class="product-image">
+        <h2>Салат з підкопченою куркою і печеними овочами</h2>
+        <p>Подаємо з «російською заправкою» з діжонською гірчицею і паприкою</p>
+        <div class="product-details">
+            <span class="product-weight">225 г</span>
+            <span class="product-price">240 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-salad-duck">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/salads/duck.jpg" alt="Салат з качкою і маринованими груздями" class="product-image">
+        <h2>Салат з качкою і маринованими груздями</h2>
+        <p>Філе качки, грузді, обсмажена картопля, свіжі овочі, листя салату, медово-гірчична заправка.</p>
+        <div class="product-details">
+            <span class="product-weight">235 г</span>
+            <span class="product-price">270 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <!-- Модальные окна для супов -->
+    <div class="product-modal" id="modal-borsch-chef">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/hot/borsch-chef.jpg" alt="Борщ український від шефа" class="product-image">
+        <h2>Борщ український від шефа</h2>
+        <p>Борщ готуємо на яловичому бульйоні з топленим салом, яловичою грудинкою, картоплею, морквою, буряком, білою квасолею та капустою. Подаємо зі сметаною, часниковою заправкою і салом на вибір.</p>
+        <div class="product-details text-center">
+            <select id="modal-borsch-chef-select" class="form-select text-center mb-2">
+                <option value="280">З копченим салом (300/36/80/30 г) - 280 грн</option>
+                <option value="270">З підчеревком (300/36/80/30 г) - 270 грн</option>
+                <option value="260">З солоним салом (300/36/80/30 г) - 260 грн</option>
+            </select>
+            <span id="modal-borsch-chef-price" class="product-price">280 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-cold-borsch">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/hot/cold-borsch.jpg" alt="Борщ холодний" class="product-image">
+        <h2>Борщ холодний</h2>
+        <p>Подаємо з обсмаженою картоплею, свіжим огірком, редискою, буряком, кефіром, курячим яйцем, сметаною, зеленою цибулею та кропом.</p>
+        <div class="product-details">
+            <span class="product-weight">300/100 г</span>
+            <span class="product-price">190 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-okroshka">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/hot/okroshka.jpg" alt="Окрошка сільська" class="product-image">
+        <h2>Окрошка сільська</h2>
+        <p>Шинка, огірок, картопля, яйце, зелена цибуля, петрушка, кріп, хрін, квас, кефір.</p>
+        <div class="product-details">
+            <span class="product-weight">340 г</span>
+            <span class="product-price">180 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-chicken-soup">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/hot/chicken-soup.jpg" alt="Куряча юшка" class="product-image">
+        <h2>Куряча юшка</h2>
+        <p>Курячий бульйон, куряче філе, галушки, морква, ріпчаста цибуля, мікрозелень.</p>
+        <div class="product-details">
+            <span class="product-weight">330 г</span>
+            <span class="product-price">170 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-rassolnik">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/hot/rassolnik.jpg" alt="Расольник" class="product-image">
+        <h2>Расольник</h2>
+        <p>Справжній російський расольник готуємо на ароматному яловичому бульйоні з перловкою, картоплею, цибулею, морквою, яловичою грудинкою і маринованими огірочками. Подаємо з домашньою сметаною</p>
+        <div class="product-details">
+            <span class="product-weight">345 г</span>
+            <span class="product-price">190 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-tsar-soup">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/hot/tsar-soup.jpg" alt="Юшка Царська" class="product-image">
+        <h2>Юшка Царська</h2>
+        <p>Готуємо на рибному бульйоні з трьох видів риб: балтійський судак, сом, лосось. Подаємо з рибним розстібачем</p>
+        <div class="product-details">
+            <span class="product-weight">335 г</span>
+            <span class="product-price">290 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-mushroom-borsch">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/hot/mushroom-borsch.jpg" alt="Борщ Грибний" class="product-image">
+        <h2>Борщ Грибний</h2>
+        <p>Грибний бульйон, білі гриби, картопля, морква, буряк, капуста. Подаємо з пампушками і сметаною.</p>
+        <div class="product-details">
+            <span class="product-weight">405 г</span>
+            <span class="product-price">210 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <!-- Модальные окна для десертов -->
+    <div class="product-modal" id="modal-apple-strudel">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/desserts/apple-strudel.jpg" alt="Яблучний штрудель" class="product-image">
+        <h2>Яблучний штрудель</h2>
+        <p>Теплий яблучний штрудель з родзинками, корицею, ванільним соусом (кулька морозива – не доставляємо)</p>
+        <div class="product-details">
+            <span class="product-weight">120/30 г</span>
+            <span class="product-price">340 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-kyiv-cake">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/desserts/kyiv-cake.jpg" alt="Київський торт" class="product-image">
+        <h2>Київський торт</h2>
+        <p>«Київський торт» – ласощі, що з'явилися ще в 1956 році. Його обожнювали всі, від перших осіб держави до простих громадян. Київський торт дуже любив Леонід Брежнєв. На його ювілей йому подарували п'ятикілограмовий торт із 70 коржів у три поверхи.</p>
+        <div class="product-details">
+            <span class="product-weight">100 г</span>
+            <span class="product-price">395 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-chocolate-sausage">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/desserts/chocolate-sausage.jpg" alt="Тістечко шоколадна ковбаса" class="product-image">
+        <h2>Тістечко шоколадна ковбаса</h2>
+        <p>Шоколадна ковбаса з домашнім печивом і горішками. Десерт, знайомий багатьом з самого дитинства.</p>
+        <div class="product-details">
+            <span class="product-weight">130 г</span>
+            <span class="product-price">315 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-napoleon">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/desserts/napoleon.jpg" alt="Наполеон" class="product-image">
+        <h2>Наполеон</h2>
+        <p>Десерт з листкового тіста і заварного крему. Прикрашаємо крем-чизом і цукровим мереживом</p>
+        <div class="product-details">
+            <span class="product-weight">110 г</span>
+            <span class="product-price">330 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-medovik">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/desserts/medovik.jpg" alt="Медовик" class="product-image">
+        <h2>Медовик</h2>
+        <p>Десерт з медових коржів з вершково-сметанним кремом.</p>
+        <div class="product-details">
+            <span class="product-weight">80 г</span>
+            <span class="product-price">319 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-chocolate-tomato">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/desserts/chocolate-tomato.jpg" alt="Шоколадний помідор" class="product-image">
+        <h2>Шоколадний помідор</h2>
+        <p>Мусовий десерт з карамельною начинкою в шоколадній глазурі.</p>
+        <div class="product-details">
+            <span class="product-weight">120 г</span>
+            <span class="product-price">480 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-bird-cherry-cake">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/desserts/bird-cherry-cake.jpg" alt="Черемуховий торт" class="product-image">
+        <h2>Черемуховий торт</h2>
+        <p>Бісквіт з черемухового борошна зі сметанно-вершковим кремом.</p>
+        <div class="product-details">
+            <span class="product-weight">100 г</span>
+            <span class="product-price">295 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-hazelnut-caramel-tart">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/desserts/hazelnut-caramel-tart.jpg" alt="Тарт фундук-карамель" class="product-image">
+        <h2>Тарт фундук-карамель</h2>
+        <p>Горіховий крем з фундуком і карамеллю в пісочній тарталетці.</p>
+        <div class="product-details">
+            <span class="product-weight">85 г</span>
+            <span class="product-price">295 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="modal-overlay"></div>
+
+    <!-- Модальные окна для дерунов -->
+    <div class="product-modal" id="modal-deruny">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/deruny/deruny.jpg" alt="Діньки картопляні" class="product-image">
+        <h2>Діньки картопляні</h2>
+        <p>Картопля, борошно пшеничне, яйце куряче, подаємо зі сметаною.</p>
+        <div class="product-details text-center">
+            <select id="modal-deruny-select" class="form-select text-center mb-2">
+                <option value="325">Діньки класичні (200/40/30 г)</option>
+                <option value="395">Діньки з кількою (200/40/40 г)</option>
+                <option value="595">Діньки з лососем (200/40/30 г)</option>
+                <option value="445">Діньки з протертим салом (200/40/40 г)</option>
+                <option value="435">Діньки з рубаниною зі скумбрії (200/55/40 г)</option>
+            </select>
+            <span id="modal-deruny-price" class="product-price">325 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-zucchini">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/deruny/zucchini.jpg" alt="Оладки з кабачків" class="product-image">
+        <h2>Оладки з кабачків</h2>
+        <p>Кабачки, пшеничне борошно, куряче яйце, подаємо зі сметаною</p>
+        <div class="product-details text-center">
+            <select id="modal-zucchini-select" class="form-select text-center mb-2">
+                <option value="355">Оладки з кабачків (130/40 г)</option>
+                <option value="425">Оладки з цукіні з кількою (140/40/30 г)</option>
+                <option value="625">Оладки з цукіні з лососем (140/40/30 г)</option>
+                <option value="475">Оладки з цукіні з протертим салом (150/40/30 г)</option>
+                <option value="465">Оладки з цукіні з рубаниною зі скумбрії (140/40/30 г)</option>
+            </select>
+            <span id="modal-zucchini-price" class="product-price">355 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <!-- Модальные окна для выпечки -->
+    <div class="product-modal" id="modal-pancakes">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/bakery/pancakes.jpg" alt="Пшеничні млинці" class="product-image">
+        <h2>Пшеничні млинці</h2>
+        <p>Подаємо зі сметаною</p>
+        <div class="product-details">
+            <span class="product-weight">150/40 г</span>
+            <span class="product-price">199 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-pies">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/bakery/pies.jpg" alt="Пиріжки" class="product-image">
+        <h2>Пиріжки</h2>
+        <p>В асортименті</p>
+        <div class="product-details text-center">
+            <select id="modal-pies-select" class="form-select text-center mb-2">
+                <option value="90">з картоплею і грибами (60 г)</option>
+                <option value="90">з зеленою цибулею і яйцем (60 г)</option>
+                <option value="135">з м'ясом (60 г)</option>
+                <option value="85">з капустою (60 г)</option>
+                <option value="145">розстібай з рибою (60 г)</option>
+            </select>
+            <span id="modal-pies-price" class="product-price">90 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-strawberry-pancakes">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/bakery/strawberry-pancakes.jpg" alt="Млинці з полуничним варенням" class="product-image">
+        <h2>Млинці з полуничним варенням і вершково-кокосовим кремом</h2>
+        <p>Млинці з полуничним варенням і вершково-кокосовим кремом</p>
+        <div class="product-details">
+            <span class="product-weight">235 г</span>
+            <span class="product-price">329 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-salmon-pancakes">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/bakery/salmon-pancakes.jpg" alt="Млинці з лососем" class="product-image">
+        <h2>Млинці з лососем, огірочком і вершковим соусом</h2>
+        <p>Млинці з лососем, свіжим огірком, подаємо з вершковим соусом</p>
+        <div class="product-details">
+            <span class="product-weight">250 г</span>
+            <span class="product-price">455 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <div class="product-modal" id="modal-meat-pancakes">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/bakery/meat-pancakes.jpg" alt="Млинцеві мішечки з м'ясом" class="product-image">
+        <h2>Млинцеві мішечки з м'ясом і сметанним соусом</h2>
+        <p>Млинці з м'ясною начинкою, подаємо зі сметанним соусом</p>
+        <div class="product-details">
+            <span class="product-weight">270 г</span>
+            <span class="product-price">425 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <!-- Модальное окно для соусов -->
+    <div class="product-modal" id="modal-sauces">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/sauces/sauces.jpg" alt="Соуси" class="product-image">
+        <h2>Соуси</h2>
+        <div class="product-details text-center">
+            <select id="modal-sauces-select" class="form-select text-center mb-2">
+                <option value="50">Гірчиця (30 г)</option>
+                <option value="50">Майонез (30 г)</option>
+                <option value="50">Джем (30 г)</option>
+                <option value="50">Згущене молоко (30 г)</option>
+                <option value="50">Сметана (30 г)</option>
+                <option value="50">Кетчуп (30 г)</option>
+                <option value="50">Соус полуничний (30 г)</option>
+            </select>
+            <span id="modal-sauces-price" class="product-price">50 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+    <!-- Модальное окно для хлебной корзины -->
+    <div class="product-modal" id="modal-bread-basket">
+        <span class="modal-close">&times;</span>
+        <img src="menu/templates/menu/bread/bread-basket.jpg" alt="Хлібна корзина" class="product-image">
+        <h2>Хлібна корзина</h2>
+        <p>Асорті свіжоспеченого хліба</p>
+        <div class="product-details">
+            <span class="product-weight">200 г</span>
+            <span class="product-price">159 грн</span>
+        </div>
+        <button class="order-btn">Замовити</button>
+    </div>
+
+
+<!-- Модальное окно корзины (обновлённое содержимое) -->
+<div class="modal fade" id="cart-modal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Корзина</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрити"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="cart-items" class="list-group mb-3" style="max-height:300px; overflow:auto;"></ul>
+
+        <div class="d-flex justify-content-between mb-3">
+          <strong>Сума:</strong>
+          <strong id="cart-total">0 грн</strong>
+        </div>
+
+        <hr>
+
+        <h6>Дані для доставки</h6>
+        <div class="mb-2">
+          <label class="form-label" for="customer-name">Кому (П.І.Б.)</label>
+          <input id="customer-name" class="form-control" type="text" placeholder="Ім'я">
+        </div>
+        <div class="mb-2">
+          <label class="form-label" for="customer-phone">Телефон</label>
+          <input id="customer-phone" class="form-control" type="tel" placeholder="+380...">
+        </div>
+        <div class="mb-2">
+          <label class="form-label" for="delivery-type">Тип доставки</label>
+          <select id="delivery-type" class="form-select">
+            <option value="pickup">Самовивіз</option>
+            <option value="delivery">Доставка</option>
+          </select>
+        </div>
+        <div class="mb-2" id="address-group" style="display:none;">
+          <label class="form-label" for="customer-address">Куди доставити (адреса)</label>
+          <input id="customer-address" class="form-control" type="text" placeholder="Вулиця, буд., під'їзд">
+        </div>
+        <div class="mb-2">
+          <label class="form-label" for="customer-note">Коментар</label>
+          <textarea id="customer-note" class="form-control" rows="2" placeholder="Наприклад: без цибулі"></textarea>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button id="clear-cart-btn" type="button" class="btn btn-outline-danger">Очистити</button>
+        <button id="checkout-btn" type="button" class="btn btn-success">Оформити замовлення</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="menu/templates/js/script.js"></script>
+</body>
+</html>
